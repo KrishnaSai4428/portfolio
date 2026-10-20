@@ -167,7 +167,7 @@ var fab=document.getElementById('fab'),ct=document.getElementById('contact');if(
 </script>
 <script>
 (function(){
-var ENDPOINT='';
+var ENDPOINT='https://script.google.com/macros/s/AKfycbwrCOuda7ptbT2P9V0d3WYg7Bj5Fngj-pcy3qnyxolDvhRSVktKnbEZWsekU-H-fqul/exec';
 if(!ENDPOINT||navigator.doNotTrack==='1')return;
 var ref=(new URLSearchParams(location.search).get('ref')||'').slice(0,60);
 function send(o){try{o.ref=ref;o.screen=screen.width+'x'+screen.height+'@'+(devicePixelRatio||1);o.lang=navigator.language;o.tz=Intl.DateTimeFormat().resolvedOptions().timeZone;o.from=document.referrer?new URL(document.referrer).hostname:'';o.ua=navigator.userAgent.slice(0,200);navigator.sendBeacon(ENDPOINT,JSON.stringify(o))}catch(e){}}
